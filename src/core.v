@@ -148,12 +148,6 @@ module core (
         else                                                                                data_reg <= data[addr_gen];
     end
 
-    reg [7:0] xdata_reg;
-    always @(posedge clk or negedge rst) begin
-        if      (~rst)                                                                      xdata_reg <= 'b0;
-        else if (ram_rd_en)                                                                 xdata_reg <= ram_rd_data;
-    end
-
     reg [7:0] data [255:0];
     always @(posedge clk) begin
         if (~rst) begin
