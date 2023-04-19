@@ -2,6 +2,11 @@ module core (
     input           clk,
     input           rst,
 
+    inout   [7:0]   p0,
+    inout   [7:0]   p1,
+    inout   [7:0]   p2,
+    inout   [7:0]   p3,
+
     output          rom_en,
     output  [15:0]  rom_addr,
     input   [ 7:0]  rom_data,
@@ -49,7 +54,7 @@ module core (
     reg [2:0] first_byte;
     always @(posedge clk or negedge rst) begin
         if      (~rst)                                                                      first_byte <= 'b0;
-        else                                                                                first_byte <= {first_byte[1] & clr_1, first_byte[0] & clr_0, ~(first_byte[2] && length3(inst_reg2) || first_byte[1] && length2(inst_reg1))};
+        else                                                                                first_byte <= {first_byte[1] & ~clr_1, first_byte[0] & ~clr_0, ~(first_byte[2] && length3(inst_reg2) || first_byte[1] && length2(inst_reg1))};
     end
 
     reg [15:0] program_counter;
@@ -157,6 +162,10 @@ module core (
                                                                                             `SP  <= 8'h07;
                                                                                             `DPL <= 8'h00;
                                                                                             `DPH <= 8'h00;
+                                                                                            `P0  <= 8'hff;
+                                                                                            `P1  <= 8'hff;
+                                                                                            `P2  <= 8'hff;
+                                                                                            `P3  <= 8'hff;
         end
         else if (first_byte[2]) begin
             if      (add_a_rn(inst_reg2) || add_a_di(inst_reg2) || add_a_ri(inst_reg2))     `ACC <= `ACC + data_reg;
@@ -264,5 +273,10 @@ module core (
         else                                                                                ram_wr_data_signal = 8'b0;
     end
     assign ram_wr_data = ram_wr_data_signal;
+
+    assign p0 = `P0;
+    assign p1 = `P1;
+    assign p2 = `P2;
+    assign p3 = `P3;
 
 endmodule

@@ -25,6 +25,11 @@ module top (
         .clk            (clk),
         .rst            (rst),
 
+        .p0             (p0),
+        .p1             (p1),
+        .p2             (p2),
+        .p3             (p3),
+
         .rom_en         (rom_en),
         .rom_addr       (rom_addr),
         .rom_data       (rom_data),
