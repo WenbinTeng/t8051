@@ -14,6 +14,12 @@ Since our CPU will be implemented on FPGA, different execution/memory architectu
 
 
 
+## Architecture
+
+<img src="asset/arch.jpg" alt="arch" style="zoom:50%;" />
+
+
+
 ## Reference
 
 [Intel 8051 - Wikipedia](https://en.wikipedia.org/wiki/Intel_8051)
