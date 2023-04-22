@@ -16,7 +16,7 @@ Since our CPU will be implemented on FPGA, different execution/memory architectu
 
 ## Architecture
 
-<img src="asset/arch.jpg" alt="arch" style="zoom:50%;" />
+<img src="asset/arch.jpg" alt="arch" style="width:70%;" />
 
 
 
