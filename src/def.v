@@ -183,22 +183,22 @@ function jz             (input [7:0] i); jz             = (i[7:0]==8'b01100000);
 // JNZ
 function jnz            (input [7:0] i); jnz            = (i[7:0]==8'b01110000); endfunction
 // CJNE
-function cjne_a_di_rel  (input [7:0] i); cjne_a_di_rel  = (i[7:0]==8'b10110101); endfunction
-function cjne_a_da_rel  (input [7:0] i); cjne_a_da_rel  = (i[7:0]==8'b10110100); endfunction
-function cjne_rn_da_rel (input [7:0] i); cjne_rn_da_rel = (i[7:3]==5'b10111   ); endfunction
-function cjne_ri_da_rel (input [7:0] i); cjne_ri_da_rel = (i[7:1]==7'b1011011 ); endfunction
+function cjne_a_di      (input [7:0] i); cjne_a_di      = (i[7:0]==8'b10110101); endfunction
+function cjne_a_da      (input [7:0] i); cjne_a_da      = (i[7:0]==8'b10110100); endfunction
+function cjne_rn_da     (input [7:0] i); cjne_rn_da     = (i[7:3]==5'b10111   ); endfunction
+function cjne_ri_da     (input [7:0] i); cjne_ri_da     = (i[7:1]==7'b1011011 ); endfunction
 // DJNZ
-function djnz_rn_rel    (input [7:0] i); djnz_rn_rel    = (i[7:3]==5'b11011   ); endfunction
-function djnz_di_rel    (input [7:0] i); djnz_di_rel    = (i[7:0]==8'b11010101); endfunction
+function djnz_rn        (input [7:0] i); djnz_rn        = (i[7:3]==5'b11011   ); endfunction
+function djnz_di        (input [7:0] i); djnz_di        = (i[7:0]==8'b11010101); endfunction
 // NOP
 function nop            (input [7:0] i); nop            = (i[7:0]==8'b00000000); endfunction
 
 // CHECK INSTRUCTION LENGTH
 function length3 (input [7:0] i);
-    length3 = anl_di_da(i)|orl_di_da(i)|xrl_di_da(i)|mov_di_di(i)|mov_di_da(i)|mov_dp_da(i)|jb(i)|jnb(i)|jbc(i)|acall(i)|lcall(i)|ret(i)|reti(i)|ljmp(i)|cjne_a_di_rel(i)|cjne_a_da_rel(i)|cjne_rn_da_rel(i)|cjne_ri_da_rel(i)|djnz_di_rel(i);
+    length3 = anl_di_da(i)|orl_di_da(i)|xrl_di_da(i)|mov_di_di(i)|mov_di_da(i)|mov_dp_da(i)|jb(i)|jnb(i)|jbc(i)|acall(i)|lcall(i)|ret(i)|reti(i)|ljmp(i)|cjne_a_di(i)|cjne_a_da(i)|cjne_rn_da(i)|cjne_ri_da(i)|djnz_di(i);
 endfunction
 function length2 (input [7:0] i);
-    length2 = add_a_di(i)|add_a_da(i)|addc_a_di(i)|addc_a_da(i)|subb_a_di(i)|subb_a_da(i)|inc_di(i)|dec_di(i)|anl_a_di(i)|anl_a_da(i)|anl_di_a(i)|orl_a_di(i)|orl_a_da(i)|orl_di_a(i)|xrl_a_di(i)|xrl_a_da(i)|xrl_di_a(i)|mov_a_di(i)|mov_a_da(i)|mov_rn_di(i)|mov_rn_da(i)|mov_di_a(i)|mov_di_rn(i)|mov_di_ri(i)|mov_ri_di(i)|mov_ri_da(i)|push(i)|pop(i)|xch_a_di(i)|clr_bit(i)|setb_bit(i)|cpl_bit(i)|anl_c_bit(i)|anl_c_nbit(i)|orl_c_bit(i)|orl_c_nbit(i)|mov_c_bit(i)|mov_bit_c(i)|jc(i)|jnc(i)|ajmp(i)|sjmp(i)|jz(i)|jnz(i)|djnz_rn_rel(i)|
+    length2 = add_a_di(i)|add_a_da(i)|addc_a_di(i)|addc_a_da(i)|subb_a_di(i)|subb_a_da(i)|inc_di(i)|dec_di(i)|anl_a_di(i)|anl_a_da(i)|anl_di_a(i)|orl_a_di(i)|orl_a_da(i)|orl_di_a(i)|xrl_a_di(i)|xrl_a_da(i)|xrl_di_a(i)|mov_a_di(i)|mov_a_da(i)|mov_rn_di(i)|mov_rn_da(i)|mov_di_a(i)|mov_di_rn(i)|mov_di_ri(i)|mov_ri_di(i)|mov_ri_da(i)|push(i)|pop(i)|xch_a_di(i)|clr_bit(i)|setb_bit(i)|cpl_bit(i)|anl_c_bit(i)|anl_c_nbit(i)|orl_c_bit(i)|orl_c_nbit(i)|mov_c_bit(i)|mov_bit_c(i)|jc(i)|jnc(i)|ajmp(i)|sjmp(i)|jz(i)|jnz(i)|djnz_rn(i)|
               movc_a_dp(i)|movc_a_pc(i)|
               movx_a_ri(i)|movx_a_dp(i);
 endfunction
