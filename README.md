@@ -20,6 +20,14 @@ Since our CPU will be implemented on FPGA, different execution/memory architectu
 
 
 
+## Implementation
+
+| Resource    | LUT   | FF    | IO    | BUFG  |
+| ----------- | ----- | ----- | ----- | ----- |
+| Utilization | 24174 | 2244  | 109   | 1     |
+
+
+
 ## Reference
 
 [Intel 8051 - Wikipedia](https://en.wikipedia.org/wiki/Intel_8051)
