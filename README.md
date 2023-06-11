@@ -10,7 +10,7 @@ Since our CPU will be implemented on FPGA, different execution/memory architectu
 
 - We build a three-stage pipelined architecture for instruction execution, where each instruction must takes three machine cycles to finish execution.
 - We set up 64 KB external ROM and 64 KB external RAM according to the maximum addressable space.
-- We provide a controller for the peripherals on FPGA board.
+- We hope to provide a controller for the peripherals on FPGA board soon.
 
 
 
