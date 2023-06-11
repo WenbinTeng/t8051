@@ -199,14 +199,20 @@ function length3 (input [7:0] i);
 endfunction
 function length2 (input [7:0] i);
     length2 = add_a_di(i)|add_a_da(i)|addc_a_di(i)|addc_a_da(i)|subb_a_di(i)|subb_a_da(i)|inc_di(i)|dec_di(i)|anl_a_di(i)|anl_a_da(i)|anl_di_a(i)|orl_a_di(i)|orl_a_da(i)|orl_di_a(i)|xrl_a_di(i)|xrl_a_da(i)|xrl_di_a(i)|
-              mov_a_di(i)|mov_a_da(i)|mov_rn_di(i)|mov_rn_da(i)|mov_di_a(i)|mov_di_rn(i)|mov_di_ri(i)|mov_ri_di(i)|mov_ri_da(i)|push(i)|pop(i)|xch_a_di(i)|clr_bit(i)|setb_bit(i)|cpl_bit(i)|anl_c_bit(i)|anl_c_nbit(i)|orl_c_bit(i)|orl_c_nbit(i)|mov_c_bit(i)|mov_bit_c(i)|
+              mov_a_di(i)|mov_a_da(i)|mov_rn_di(i)|mov_rn_da(i)|mov_di_a(i)|mov_di_rn(i)|mov_di_ri(i)|mov_ri_di(i)|mov_ri_da(i)|push(i)|pop(i)|xch_a_di(i)|
+              clr_bit(i)|setb_bit(i)|cpl_bit(i)|anl_c_bit(i)|anl_c_nbit(i)|orl_c_bit(i)|orl_c_nbit(i)|mov_c_bit(i)|mov_bit_c(i)|
               jc(i)|jnc(i)|ajmp(i)|sjmp(i)|jz(i)|jnz(i)|djnz_rn(i)|
               movc_a_dp(i)|movc_a_pc(i)|
               movx_a_ri(i)|movx_a_dp(i);
 endfunction
 function length1 (input [7:0] i);
-    length1 = add_a_rn(i)|addc_a_rn(i)|subb_a_rn(i)|inc_a(i)|inc_rn(i)|inc_dp(i)|dec_a(i)|dec_rn(i)|mul(i)|div(i)|da(i)|anl_a_rn(i)|orl_a_rn(i)|xrl_a_rn(i)|clr_a(i)|cpl_a(i)|rl_a(i)|rlc_a(i)|rr_a(i)|rrc_a(i)|
-              swap_a(i)|mov_a_rn(i)|mov_rn_a(i)|mov_ri_a(i)|movx_ri_a(i)|movx_dp_a(i)|xch_a_rn(i)|clr_c(i)|setb_c(i)|cpl_c(i)|jmp(i)|add_a_ri(i)|addc_a_ri(i)|subb_a_ri(i)|inc_ri(i)|dec_ri(i)|anl_a_ri(i)|orl_a_ri(i)|xrl_a_ri(i)|mov_a_ri(i)|xch_a_ri(i)|xchd_a_ri(i);
+    length1 = add_a_rn(i)|addc_a_rn(i)|subb_a_rn(i)|inc_a(i)|inc_rn(i)|inc_dp(i)|dec_a(i)|dec_rn(i)|mul(i)|div(i)|da(i)|
+              anl_a_rn(i)|orl_a_rn(i)|xrl_a_rn(i)|
+              clr_a(i)|cpl_a(i)|rl_a(i)|rlc_a(i)|rr_a(i)|rrc_a(i)|
+              swap_a(i)|mov_a_rn(i)|mov_rn_a(i)|mov_ri_a(i)|movx_ri_a(i)|movx_dp_a(i)|xch_a_rn(i)|
+              clr_c(i)|setb_c(i)|cpl_c(i)|jmp(i)|add_a_ri(i)|addc_a_ri(i)|subb_a_ri(i)|inc_ri(i)|dec_ri(i)|
+              anl_a_ri(i)|orl_a_ri(i)|xrl_a_ri(i)|
+              mov_a_ri(i)|xch_a_ri(i)|xchd_a_ri(i);
 endfunction
 
 // TODO: MUL FUNC
