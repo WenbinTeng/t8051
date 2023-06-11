@@ -305,9 +305,14 @@ module core (
     end
     assign ram_wr_data = ram_wr_data_signal;
 
-    assign p0 = `P0;
-    assign p1 = `P1;
-    assign p2 = `P2;
-    assign p3 = `P3;
+    genvar i;
+    generate
+        for (i = 0; i < 8; i = i + 1) begin
+            assign p0[i] = data[8'hf8][i] ? `P0[i] : 1'bz;
+            assign p1[i] = data[8'hf9][i] ? `P1[i] : 1'bz;
+            assign p2[i] = data[8'hfa][i] ? `P2[i] : 1'bz;
+            assign p3[i] = data[8'hfb][i] ? `P3[i] : 1'bz;
+        end
+    endgenerate
 
 endmodule
