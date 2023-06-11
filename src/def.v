@@ -163,35 +163,35 @@ function jbc            (input [7:0] i); jbc        = (i[7:0]==8'b00010000); end
 
 // PROGRAM BRANCHING
 // ACALL
-function acall          (input [7:0] i); acall          = (i[4:0]==5'b10001   ); endfunction
+function acall          (input [7:0] i); acall      = (i[4:0]==5'b10001   ); endfunction
 // LCALL
-function lcall          (input [7:0] i); lcall          = (i[7:0]==8'b00010010); endfunction
+function lcall          (input [7:0] i); lcall      = (i[7:0]==8'b00010010); endfunction
 // RET
-function ret            (input [7:0] i); ret            = (i[7:0]==8'b00100010); endfunction
+function ret            (input [7:0] i); ret        = (i[7:0]==8'b00100010); endfunction
 // RETI
-function reti           (input [7:0] i); reti           = (i[7:0]==8'b00110010); endfunction
+function reti           (input [7:0] i); reti       = (i[7:0]==8'b00110010); endfunction
 // AJMP
-function ajmp           (input [7:0] i); ajmp           = (i[4:0]==5'b00001   ); endfunction
+function ajmp           (input [7:0] i); ajmp       = (i[4:0]==5'b00001   ); endfunction
 // LJMP
-function ljmp           (input [7:0] i); ljmp           = (i[7:0]==8'b00000010); endfunction
+function ljmp           (input [7:0] i); ljmp       = (i[7:0]==8'b00000010); endfunction
 // SJMP
-function sjmp           (input [7:0] i); sjmp           = (i[7:0]==8'b10000000); endfunction
+function sjmp           (input [7:0] i); sjmp       = (i[7:0]==8'b10000000); endfunction
 // JMP
-function jmp            (input [7:0] i); jmp            = (i[7:0]==8'b01110011); endfunction
+function jmp            (input [7:0] i); jmp        = (i[7:0]==8'b01110011); endfunction
 // JZ
-function jz             (input [7:0] i); jz             = (i[7:0]==8'b01100000); endfunction
+function jz             (input [7:0] i); jz         = (i[7:0]==8'b01100000); endfunction
 // JNZ
-function jnz            (input [7:0] i); jnz            = (i[7:0]==8'b01110000); endfunction
+function jnz            (input [7:0] i); jnz        = (i[7:0]==8'b01110000); endfunction
 // CJNE
-function cjne_a_di      (input [7:0] i); cjne_a_di      = (i[7:0]==8'b10110101); endfunction
-function cjne_a_da      (input [7:0] i); cjne_a_da      = (i[7:0]==8'b10110100); endfunction
-function cjne_rn_da     (input [7:0] i); cjne_rn_da     = (i[7:3]==5'b10111   ); endfunction
-function cjne_ri_da     (input [7:0] i); cjne_ri_da     = (i[7:1]==7'b1011011 ); endfunction
+function cjne_a_di      (input [7:0] i); cjne_a_di  = (i[7:0]==8'b10110101); endfunction
+function cjne_a_da      (input [7:0] i); cjne_a_da  = (i[7:0]==8'b10110100); endfunction
+function cjne_rn_da     (input [7:0] i); cjne_rn_da = (i[7:3]==5'b10111   ); endfunction
+function cjne_ri_da     (input [7:0] i); cjne_ri_da = (i[7:1]==7'b1011011 ); endfunction
 // DJNZ
-function djnz_rn        (input [7:0] i); djnz_rn        = (i[7:3]==5'b11011   ); endfunction
-function djnz_di        (input [7:0] i); djnz_di        = (i[7:0]==8'b11010101); endfunction
+function djnz_rn        (input [7:0] i); djnz_rn    = (i[7:3]==5'b11011   ); endfunction
+function djnz_di        (input [7:0] i); djnz_di    = (i[7:0]==8'b11010101); endfunction
 // NOP
-function nop            (input [7:0] i); nop            = (i[7:0]==8'b00000000); endfunction
+function nop            (input [7:0] i); nop        = (i[7:0]==8'b00000000); endfunction
 
 // CHECK INSTRUCTION LENGTH
 function length3 (input [7:0] i);
