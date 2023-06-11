@@ -22,6 +22,8 @@ Since our CPU will be implemented on FPGA, different execution/memory architectu
 
 ## Implementation
 
+We run FPGA implementation in Vivado, the core utilization is shown below.
+
 | Resource    | LUT   | FF    | IO    | BUFG  |
 | ----------- | ----- | ----- | ----- | ----- |
 | Utilization | 24174 | 2244  | 109   | 1     |
