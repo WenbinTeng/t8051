@@ -25,37 +25,37 @@
 
 // ARITHMETIC OPERATIONS
 // ADD
-function add_a_rn       (input [7:0] i); add_a_rn       = (i[7:3]==5'b00101   ); endfunction
-function add_a_di       (input [7:0] i); add_a_di       = (i[7:0]==8'b00100101); endfunction
-function add_a_ri       (input [7:0] i); add_a_ri       = (i[7:1]==7'b0010011 ); endfunction
-function add_a_da       (input [7:0] i); add_a_da       = (i[7:0]==8'b00100100); endfunction
+function add_a_rn       (input [7:0] i); add_a_rn   = (i[7:3]==5'b00101   ); endfunction
+function add_a_di       (input [7:0] i); add_a_di   = (i[7:0]==8'b00100101); endfunction
+function add_a_ri       (input [7:0] i); add_a_ri   = (i[7:1]==7'b0010011 ); endfunction
+function add_a_da       (input [7:0] i); add_a_da   = (i[7:0]==8'b00100100); endfunction
 // ADDC
-function addc_a_rn      (input [7:0] i); addc_a_rn      = (i[7:3]==5'b00111   ); endfunction
-function addc_a_di      (input [7:0] i); addc_a_di      = (i[7:0]==8'b00110101); endfunction
-function addc_a_ri      (input [7:0] i); addc_a_ri      = (i[7:1]==7'b0011011 ); endfunction
-function addc_a_da      (input [7:0] i); addc_a_da      = (i[7:0]==8'b00110100); endfunction
+function addc_a_rn      (input [7:0] i); addc_a_rn  = (i[7:3]==5'b00111   ); endfunction
+function addc_a_di      (input [7:0] i); addc_a_di  = (i[7:0]==8'b00110101); endfunction
+function addc_a_ri      (input [7:0] i); addc_a_ri  = (i[7:1]==7'b0011011 ); endfunction
+function addc_a_da      (input [7:0] i); addc_a_da  = (i[7:0]==8'b00110100); endfunction
 // SUBB
-function subb_a_rn      (input [7:0] i); subb_a_rn      = (i[7:3]==5'b10011   ); endfunction
-function subb_a_di      (input [7:0] i); subb_a_di      = (i[7:0]==8'b10010101); endfunction
-function subb_a_ri      (input [7:0] i); subb_a_ri      = (i[7:1]==7'b1001011 ); endfunction
-function subb_a_da      (input [7:0] i); subb_a_da      = (i[7:0]==8'b10010100); endfunction
+function subb_a_rn      (input [7:0] i); subb_a_rn  = (i[7:3]==5'b10011   ); endfunction
+function subb_a_di      (input [7:0] i); subb_a_di  = (i[7:0]==8'b10010101); endfunction
+function subb_a_ri      (input [7:0] i); subb_a_ri  = (i[7:1]==7'b1001011 ); endfunction
+function subb_a_da      (input [7:0] i); subb_a_da  = (i[7:0]==8'b10010100); endfunction
 // INC
-function inc_a          (input [7:0] i); inc_a          = (i[7:0]==8'b00000100); endfunction
-function inc_rn         (input [7:0] i); inc_rn         = (i[7:3]==5'b00001   ); endfunction
-function inc_di         (input [7:0] i); inc_di         = (i[7:0]==8'b00000101); endfunction
-function inc_ri         (input [7:0] i); inc_ri         = (i[7:1]==7'b0000011 ); endfunction
-function inc_dp         (input [7:0] i); inc_dp         = (i[7:0]==8'b10100011); endfunction
+function inc_a          (input [7:0] i); inc_a      = (i[7:0]==8'b00000100); endfunction
+function inc_rn         (input [7:0] i); inc_rn     = (i[7:3]==5'b00001   ); endfunction
+function inc_di         (input [7:0] i); inc_di     = (i[7:0]==8'b00000101); endfunction
+function inc_ri         (input [7:0] i); inc_ri     = (i[7:1]==7'b0000011 ); endfunction
+function inc_dp         (input [7:0] i); inc_dp     = (i[7:0]==8'b10100011); endfunction
 // DEC
-function dec_a          (input [7:0] i); dec_a          = (i[7:0]==8'b00010100); endfunction
-function dec_rn         (input [7:0] i); dec_rn         = (i[7:3]==5'b00011   ); endfunction
-function dec_di         (input [7:0] i); dec_di         = (i[7:0]==8'b00010101); endfunction
-function dec_ri         (input [7:0] i); dec_ri         = (i[7:1]==7'b0001011 ); endfunction
+function dec_a          (input [7:0] i); dec_a      = (i[7:0]==8'b00010100); endfunction
+function dec_rn         (input [7:0] i); dec_rn     = (i[7:3]==5'b00011   ); endfunction
+function dec_di         (input [7:0] i); dec_di     = (i[7:0]==8'b00010101); endfunction
+function dec_ri         (input [7:0] i); dec_ri     = (i[7:1]==7'b0001011 ); endfunction
 // MUL
-function mul            (input [7:0] i); mul            = (i[7:0]==8'b10100100); endfunction
+function mul            (input [7:0] i); mul        = (i[7:0]==8'b10100100); endfunction
 // DIV
-function div            (input [7:0] i); div            = (i[7:0]==8'b10000100); endfunction
+function div            (input [7:0] i); div        = (i[7:0]==8'b10000100); endfunction
 // DA
-function da             (input [7:0] i); da             = (i[7:0]==8'b11010100); endfunction
+function da             (input [7:0] i); da         = (i[7:0]==8'b11010100); endfunction
 
 // LOGICAL OPERATIONS
 // ANL
