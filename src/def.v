@@ -59,40 +59,40 @@ function da             (input [7:0] i); da         = (i[7:0]==8'b11010100); end
 
 // LOGICAL OPERATIONS
 // ANL
-function anl_a_rn       (input [7:0] i); anl_a_rn       = (i[7:3]==5'b01011   ); endfunction
-function anl_a_di       (input [7:0] i); anl_a_di       = (i[7:0]==8'b01010101); endfunction
-function anl_a_ri       (input [7:0] i); anl_a_ri       = (i[7:1]==7'b0101011 ); endfunction
-function anl_a_da       (input [7:0] i); anl_a_da       = (i[7:0]==8'b01010100); endfunction
-function anl_di_a       (input [7:0] i); anl_di_a       = (i[7:0]==8'b01010010); endfunction
-function anl_di_da      (input [7:0] i); anl_di_da      = (i[7:0]==8'b01010011); endfunction
+function anl_a_rn       (input [7:0] i); anl_a_rn   = (i[7:3]==5'b01011   ); endfunction
+function anl_a_di       (input [7:0] i); anl_a_di   = (i[7:0]==8'b01010101); endfunction
+function anl_a_ri       (input [7:0] i); anl_a_ri   = (i[7:1]==7'b0101011 ); endfunction
+function anl_a_da       (input [7:0] i); anl_a_da   = (i[7:0]==8'b01010100); endfunction
+function anl_di_a       (input [7:0] i); anl_di_a   = (i[7:0]==8'b01010010); endfunction
+function anl_di_da      (input [7:0] i); anl_di_da  = (i[7:0]==8'b01010011); endfunction
 // ORL
-function orl_a_rn       (input [7:0] i); orl_a_rn       = (i[7:3]==5'b01001   ); endfunction
-function orl_a_di       (input [7:0] i); orl_a_di       = (i[7:0]==8'b01000101); endfunction
-function orl_a_ri       (input [7:0] i); orl_a_ri       = (i[7:1]==7'b0100011 ); endfunction
-function orl_a_da       (input [7:0] i); orl_a_da       = (i[7:0]==8'b01000100); endfunction
-function orl_di_a       (input [7:0] i); orl_di_a       = (i[7:0]==8'b01000010); endfunction
-function orl_di_da      (input [7:0] i); orl_di_da      = (i[7:0]==8'b01000011); endfunction
+function orl_a_rn       (input [7:0] i); orl_a_rn   = (i[7:3]==5'b01001   ); endfunction
+function orl_a_di       (input [7:0] i); orl_a_di   = (i[7:0]==8'b01000101); endfunction
+function orl_a_ri       (input [7:0] i); orl_a_ri   = (i[7:1]==7'b0100011 ); endfunction
+function orl_a_da       (input [7:0] i); orl_a_da   = (i[7:0]==8'b01000100); endfunction
+function orl_di_a       (input [7:0] i); orl_di_a   = (i[7:0]==8'b01000010); endfunction
+function orl_di_da      (input [7:0] i); orl_di_da  = (i[7:0]==8'b01000011); endfunction
 // XRL
-function xrl_a_rn       (input [7:0] i); xrl_a_rn       = (i[7:3]==5'b01101   ); endfunction
-function xrl_a_di       (input [7:0] i); xrl_a_di       = (i[7:0]==8'b01100101); endfunction
-function xrl_a_ri       (input [7:0] i); xrl_a_ri       = (i[7:1]==7'b0110011 ); endfunction
-function xrl_a_da       (input [7:0] i); xrl_a_da       = (i[7:0]==8'b01100100); endfunction
-function xrl_di_a       (input [7:0] i); xrl_di_a       = (i[7:0]==8'b01100010); endfunction
-function xrl_di_da      (input [7:0] i); xrl_di_da      = (i[7:0]==8'b01100011); endfunction
+function xrl_a_rn       (input [7:0] i); xrl_a_rn   = (i[7:3]==5'b01101   ); endfunction
+function xrl_a_di       (input [7:0] i); xrl_a_di   = (i[7:0]==8'b01100101); endfunction
+function xrl_a_ri       (input [7:0] i); xrl_a_ri   = (i[7:1]==7'b0110011 ); endfunction
+function xrl_a_da       (input [7:0] i); xrl_a_da   = (i[7:0]==8'b01100100); endfunction
+function xrl_di_a       (input [7:0] i); xrl_di_a   = (i[7:0]==8'b01100010); endfunction
+function xrl_di_da      (input [7:0] i); xrl_di_da  = (i[7:0]==8'b01100011); endfunction
 // CLR
-function clr_a          (input [7:0] i); clr_a          = (i[7:0]==8'b11100100); endfunction
+function clr_a          (input [7:0] i); clr_a      = (i[7:0]==8'b11100100); endfunction
 // CPL
-function cpl_a          (input [7:0] i); cpl_a          = (i[7:0]==8'b11110100); endfunction
+function cpl_a          (input [7:0] i); cpl_a      = (i[7:0]==8'b11110100); endfunction
 // RL
-function rl_a           (input [7:0] i); rl_a           = (i[7:0]==8'b00100011); endfunction
+function rl_a           (input [7:0] i); rl_a       = (i[7:0]==8'b00100011); endfunction
 // RLC
-function rlc_a          (input [7:0] i); rlc_a          = (i[7:0]==8'b00110011); endfunction
+function rlc_a          (input [7:0] i); rlc_a      = (i[7:0]==8'b00110011); endfunction
 // RR
-function rr_a           (input [7:0] i); rr_a           = (i[7:0]==8'b00000011); endfunction
+function rr_a           (input [7:0] i); rr_a       = (i[7:0]==8'b00000011); endfunction
 // RRC
-function rrc_a          (input [7:0] i); rrc_a          = (i[7:0]==8'b00010011); endfunction
+function rrc_a          (input [7:0] i); rrc_a      = (i[7:0]==8'b00010011); endfunction
 // SWAP
-function swap_a         (input [7:0] i); swap_a         = (i[7:0]==8'b11000100); endfunction
+function swap_a         (input [7:0] i); swap_a     = (i[7:0]==8'b11000100); endfunction
 
 // DATA TRANSFER
 // MOV
