@@ -133,33 +133,33 @@ function xchd_a_ri      (input [7:0] i); xchd_a_ri  = (i[7:1]==7'b1101011 ); end
 
 // BOOLEAN VARIABLE MANIPULATION
 // CLR
-function clr_c          (input [7:0] i); clr_c          = (i[7:0]==8'b11000011); endfunction
-function clr_bit        (input [7:0] i); clr_bit        = (i[7:0]==8'b11000010); endfunction
+function clr_c          (input [7:0] i); clr_c      = (i[7:0]==8'b11000011); endfunction
+function clr_bit        (input [7:0] i); clr_bit    = (i[7:0]==8'b11000010); endfunction
 // SETB
-function setb_c         (input [7:0] i); setb_c         = (i[7:0]==8'b11010011); endfunction
-function setb_bit       (input [7:0] i); setb_bit       = (i[7:0]==8'b11010010); endfunction
+function setb_c         (input [7:0] i); setb_c     = (i[7:0]==8'b11010011); endfunction
+function setb_bit       (input [7:0] i); setb_bit   = (i[7:0]==8'b11010010); endfunction
 // CPL
-function cpl_c          (input [7:0] i); cpl_c          = (i[7:0]==8'b10110011); endfunction
-function cpl_bit        (input [7:0] i); cpl_bit        = (i[7:0]==8'b10110010); endfunction
+function cpl_c          (input [7:0] i); cpl_c      = (i[7:0]==8'b10110011); endfunction
+function cpl_bit        (input [7:0] i); cpl_bit    = (i[7:0]==8'b10110010); endfunction
 // ANL
-function anl_c_bit      (input [7:0] i); anl_c_bit      = (i[7:0]==8'b10000010); endfunction
-function anl_c_nbit     (input [7:0] i); anl_c_nbit     = (i[7:0]==8'b10110000); endfunction
+function anl_c_bit      (input [7:0] i); anl_c_bit  = (i[7:0]==8'b10000010); endfunction
+function anl_c_nbit     (input [7:0] i); anl_c_nbit = (i[7:0]==8'b10110000); endfunction
 // ORL
-function orl_c_bit      (input [7:0] i); orl_c_bit      = (i[7:0]==8'b01110010); endfunction
-function orl_c_nbit     (input [7:0] i); orl_c_nbit     = (i[7:0]==8'b10100000); endfunction
+function orl_c_bit      (input [7:0] i); orl_c_bit  = (i[7:0]==8'b01110010); endfunction
+function orl_c_nbit     (input [7:0] i); orl_c_nbit = (i[7:0]==8'b10100000); endfunction
 // MOV
-function mov_c_bit      (input [7:0] i); mov_c_bit      = (i[7:0]==8'b10100010); endfunction
-function mov_bit_c      (input [7:0] i); mov_bit_c      = (i[7:0]==8'b10010010); endfunction
+function mov_c_bit      (input [7:0] i); mov_c_bit  = (i[7:0]==8'b10100010); endfunction
+function mov_bit_c      (input [7:0] i); mov_bit_c  = (i[7:0]==8'b10010010); endfunction
 // JC
-function jc             (input [7:0] i); jc             = (i[7:0]==8'b01000000); endfunction
+function jc             (input [7:0] i); jc         = (i[7:0]==8'b01000000); endfunction
 // JNC
-function jnc            (input [7:0] i); jnc            = (i[7:0]==8'b01010000); endfunction
+function jnc            (input [7:0] i); jnc        = (i[7:0]==8'b01010000); endfunction
 // JB
-function jb             (input [7:0] i); jb             = (i[7:0]==8'b00100000); endfunction
+function jb             (input [7:0] i); jb         = (i[7:0]==8'b00100000); endfunction
 // JNB
-function jnb            (input [7:0] i); jnb            = (i[7:0]==8'b00110000); endfunction
+function jnb            (input [7:0] i); jnb        = (i[7:0]==8'b00110000); endfunction
 // JBC
-function jbc            (input [7:0] i); jbc            = (i[7:0]==8'b00010000); endfunction
+function jbc            (input [7:0] i); jbc        = (i[7:0]==8'b00010000); endfunction
 
 // PROGRAM BRANCHING
 // ACALL
