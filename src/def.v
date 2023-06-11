@@ -96,40 +96,40 @@ function swap_a         (input [7:0] i); swap_a     = (i[7:0]==8'b11000100); end
 
 // DATA TRANSFER
 // MOV
-function mov_a_rn       (input [7:0] i); mov_a_rn       = (i[7:3]==5'b11101   ); endfunction
-function mov_a_di       (input [7:0] i); mov_a_di       = (i[7:0]==8'b11100101); endfunction
-function mov_a_ri       (input [7:0] i); mov_a_ri       = (i[7:1]==7'b1110011 ); endfunction
-function mov_a_da       (input [7:0] i); mov_a_da       = (i[7:0]==8'b01110100); endfunction
-function mov_rn_a       (input [7:0] i); mov_rn_a       = (i[7:3]==5'b11111   ); endfunction
-function mov_rn_di      (input [7:0] i); mov_rn_di      = (i[7:3]==5'b10101   ); endfunction
-function mov_rn_da      (input [7:0] i); mov_rn_da      = (i[7:3]==5'b01111   ); endfunction
-function mov_di_a       (input [7:0] i); mov_di_a       = (i[7:0]==8'b11110101); endfunction
-function mov_di_rn      (input [7:0] i); mov_di_rn      = (i[7:3]==5'b10001   ); endfunction
-function mov_di_di      (input [7:0] i); mov_di_di      = (i[7:0]==8'b10000101); endfunction
-function mov_di_ri      (input [7:0] i); mov_di_ri      = (i[7:1]==7'b1000011 ); endfunction 
-function mov_di_da      (input [7:0] i); mov_di_da      = (i[7:0]==8'b01110101); endfunction
-function mov_ri_a       (input [7:0] i); mov_ri_a       = (i[7:1]==7'b1111011 ); endfunction
-function mov_ri_di      (input [7:0] i); mov_ri_di      = (i[7:1]==7'b1010011 ); endfunction
-function mov_ri_da      (input [7:0] i); mov_ri_da      = (i[7:1]==7'b0111011 ); endfunction
-function mov_dp_da      (input [7:0] i); mov_dp_da      = (i[7:0]==8'b10010000); endfunction
+function mov_a_rn       (input [7:0] i); mov_a_rn   = (i[7:3]==5'b11101   ); endfunction
+function mov_a_di       (input [7:0] i); mov_a_di   = (i[7:0]==8'b11100101); endfunction
+function mov_a_ri       (input [7:0] i); mov_a_ri   = (i[7:1]==7'b1110011 ); endfunction
+function mov_a_da       (input [7:0] i); mov_a_da   = (i[7:0]==8'b01110100); endfunction
+function mov_rn_a       (input [7:0] i); mov_rn_a   = (i[7:3]==5'b11111   ); endfunction
+function mov_rn_di      (input [7:0] i); mov_rn_di  = (i[7:3]==5'b10101   ); endfunction
+function mov_rn_da      (input [7:0] i); mov_rn_da  = (i[7:3]==5'b01111   ); endfunction
+function mov_di_a       (input [7:0] i); mov_di_a   = (i[7:0]==8'b11110101); endfunction
+function mov_di_rn      (input [7:0] i); mov_di_rn  = (i[7:3]==5'b10001   ); endfunction
+function mov_di_di      (input [7:0] i); mov_di_di  = (i[7:0]==8'b10000101); endfunction
+function mov_di_ri      (input [7:0] i); mov_di_ri  = (i[7:1]==7'b1000011 ); endfunction 
+function mov_di_da      (input [7:0] i); mov_di_da  = (i[7:0]==8'b01110101); endfunction
+function mov_ri_a       (input [7:0] i); mov_ri_a   = (i[7:1]==7'b1111011 ); endfunction
+function mov_ri_di      (input [7:0] i); mov_ri_di  = (i[7:1]==7'b1010011 ); endfunction
+function mov_ri_da      (input [7:0] i); mov_ri_da  = (i[7:1]==7'b0111011 ); endfunction
+function mov_dp_da      (input [7:0] i); mov_dp_da  = (i[7:0]==8'b10010000); endfunction
 // MOVC
-function movc_a_dp      (input [7:0] i); movc_a_dp      = (i[7:0]==8'b10010011); endfunction
-function movc_a_pc      (input [7:0] i); movc_a_pc      = (i[7:0]==8'b10000011); endfunction
+function movc_a_dp      (input [7:0] i); movc_a_dp  = (i[7:0]==8'b10010011); endfunction
+function movc_a_pc      (input [7:0] i); movc_a_pc  = (i[7:0]==8'b10000011); endfunction
 // MOVX
-function movx_a_ri      (input [7:0] i); movx_a_ri      = (i[7:1]==7'b1110001 ); endfunction
-function movx_a_dp      (input [7:0] i); movx_a_dp      = (i[7:0]==8'b11100000); endfunction
-function movx_ri_a      (input [7:0] i); movx_ri_a      = (i[7:1]==7'b1111001 ); endfunction
-function movx_dp_a      (input [7:0] i); movx_dp_a      = (i[7:0]==8'b11110000); endfunction
+function movx_a_ri      (input [7:0] i); movx_a_ri  = (i[7:1]==7'b1110001 ); endfunction
+function movx_a_dp      (input [7:0] i); movx_a_dp  = (i[7:0]==8'b11100000); endfunction
+function movx_ri_a      (input [7:0] i); movx_ri_a  = (i[7:1]==7'b1111001 ); endfunction
+function movx_dp_a      (input [7:0] i); movx_dp_a  = (i[7:0]==8'b11110000); endfunction
 // PUSH
-function push           (input [7:0] i); push           = (i[7:0]==8'b11000000); endfunction
+function push           (input [7:0] i); push       = (i[7:0]==8'b11000000); endfunction
 // POP
-function pop            (input [7:0] i); pop            = (i[7:0]==8'b11010000); endfunction
+function pop            (input [7:0] i); pop        = (i[7:0]==8'b11010000); endfunction
 // XCH
-function xch_a_rn       (input [7:0] i); xch_a_rn       = (i[7:3]==5'b11001   ); endfunction
-function xch_a_di       (input [7:0] i); xch_a_di       = (i[7:0]==8'b11000101); endfunction
-function xch_a_ri       (input [7:0] i); xch_a_ri       = (i[7:1]==7'b1100011 ); endfunction
+function xch_a_rn       (input [7:0] i); xch_a_rn   = (i[7:3]==5'b11001   ); endfunction
+function xch_a_di       (input [7:0] i); xch_a_di   = (i[7:0]==8'b11000101); endfunction
+function xch_a_ri       (input [7:0] i); xch_a_ri   = (i[7:1]==7'b1100011 ); endfunction
 // XCHD
-function xchd_a_ri      (input [7:0] i); xchd_a_ri      = (i[7:1]==7'b1101011 ); endfunction
+function xchd_a_ri      (input [7:0] i); xchd_a_ri  = (i[7:1]==7'b1101011 ); endfunction
 
 // BOOLEAN VARIABLE MANIPULATION
 // CLR
