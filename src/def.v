@@ -21,8 +21,6 @@
 `define ACC     data[8'he0]
 `define B       data[8'hf0]
 
-
-
 // ARITHMETIC OPERATIONS
 // ADD
 function add_a_rn       (input [7:0] i); add_a_rn   = (i[7:3]==5'b00101   ); endfunction
