@@ -16,13 +16,15 @@ Since our CPU will be implemented on FPGA, different execution/memory architectu
 
 ## Architecture
 
+The diagram of the system architecture is shown below.
+
 <img src="asset/arch.png" alt="arch" style="width:70%;" />
 
 
 
 ## Implementation
 
-We run FPGA implementation in Vivado, the core utilization is shown below.
+The implementation result is shown below.
 
 | Resource    | LUT   | FF    | IO    | BUFG  |
 | ----------- | ----- | ----- | ----- | ----- |
